@@ -1,0 +1,88 @@
+.not-found-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light); /* Consistent light background */
+  padding: var(--dl-layout-space-fiveunits); /* Added padding */
+}
+ 
+.not-found-container2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: var(--dl-layout-space-twounits); /* Space below 404 number */
+}
+ 
+.not-found-text2 {
+  color: var(--dl-color-theme-primary1); /* Primary color for the big 404 */
+  font-size: 180px; /* Slightly smaller for better balance */
+  margin-top: -10px; /* Reduced negative margin */
+  font-weight: 900;
+  margin-bottom: -10px; /* Reduced negative margin */
+  letter-spacing: -10px; /* Reduced letter spacing */
+  opacity: 0.8; /* Slightly transparent for a softer look */
+}
+ 
+.not-found-container3 {
+  width: 100%; /* Full width within its container */
+  max-width: 500px; /* Max width for readability */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+ 
+.not-found-text3 {
+  text-align: center;
+  font-weight: 500; /* Slightly bolder */
+  color: var(--dl-color-theme-neutral-dark); /* Dark text */
+  font-size: var(--thq-body-large-font-size); /* Consistent body font size */
+  line-height: 1.5;
+}
+ 
+h3 { /* Specific styling for the OOPS! heading */
+  color: var(--dl-color-theme-primary1);
+  font-size: var(--thq-heading-3-font-size);
+  font-weight: 600;
+  margin-bottom: var(--dl-layout-space-unit);
+  text-transform: uppercase;
+}
+ 
+@media(max-width: 767px) {
+  .not-found-container1 {
+    padding: var(--dl-layout-space-threeunits);
+  }
+  .not-found-text2 {
+    font-size: 140px; /* Adjusted for mobile */
+    letter-spacing: -8px;
+  }
+  .not-found-text3 {
+    font-size: var(--thq-body-small-font-size);
+  }
+  h3 {
+    font-size: var(--thq-body-large-font-size);
+  }
+}
+ 
+@media(max-width: 479px) {
+  .not-found-container1 {
+    padding: var(--dl-layout-space-twounits);
+  }
+  .not-found-text2 {
+    font-size: 100px; /* Further adjusted for small mobile */
+    letter-spacing: -5px;
+  }
+  .not-found-text3 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: var(--thq-body-small-font-size);
+  }
+}
